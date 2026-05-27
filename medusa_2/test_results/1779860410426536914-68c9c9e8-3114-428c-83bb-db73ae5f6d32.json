@@ -1,0 +1,78 @@
+[
+ {
+  "call": {
+   "from": "0x0000000000000000000000000000000000020000",
+   "to": "0x7fa9385be102ac3eac297483dd6233d62b3e1496",
+   "nonce": 0,
+   "value": "0x0",
+   "gasLimit": 12500000,
+   "gasPrice": "0x0",
+   "gasFeeCap": "0x0",
+   "gasTipCap": "0x0",
+   "data": "0x55bffc6a00000000000000000000000000000000000000000000000000000000000000910000000000000f73c86678582a0e57edba566c6300291f7ac5c7f73acd803864",
+   "dataAbiValues": {
+    "methodSignature": "morpho_supply_clamped(uint8,uint256)",
+    "inputValues": [
+     "145",
+     "24830851163870348825731693880609857425602156414530847728744548"
+    ]
+   },
+   "AccessList": null,
+   "SkipNonceChecks": true,
+   "SkipFromEOACheck": true
+  },
+  "blockNumberDelay": 0,
+  "blockTimestampDelay": 0
+ },
+ {
+  "call": {
+   "from": "0x0000000000000000000000000000000000020000",
+   "to": "0x7fa9385be102ac3eac297483dd6233d62b3e1496",
+   "nonce": 1,
+   "value": "0x0",
+   "gasLimit": 12500000,
+   "gasPrice": "0x0",
+   "gasFeeCap": "0x0",
+   "gasTipCap": "0x0",
+   "data": "0x2cfed80200000000000000000000000000000000000000000000000000000000000000a300000000000000000000000000000000000000000000000000000000000000000000000000000000022e5618067e003ad564f91b20d841381a1eed3da07d407c0000000000000000001fffffffffffffc2d5c15cda2ddb246ccffdb9982c3415",
+   "dataAbiValues": {
+    "methodSignature": "guided_crashAndLiquidate(uint8,uint256,uint256,uint256)",
+    "inputValues": [
+     "163",
+     "0",
+     "53477993520848505575549584118600561423803242167620419708",
+     "3064991081731777635414439408071377289908499501200192533"
+    ]
+   },
+   "AccessList": null,
+   "SkipNonceChecks": true,
+   "SkipFromEOACheck": true
+  },
+  "blockNumberDelay": 0,
+  "blockTimestampDelay": 0
+ },
+ {
+  "call": {
+   "from": "0x0000000000000000000000000000000000010000",
+   "to": "0x7fa9385be102ac3eac297483dd6233d62b3e1496",
+   "nonce": 0,
+   "value": "0x0",
+   "gasLimit": 12500000,
+   "gasPrice": "0x0",
+   "gasFeeCap": "0x0",
+   "gasTipCap": "0x0",
+   "data": "0x88b428150000000000000000000000000000000000000000000000000000000000000061",
+   "dataAbiValues": {
+    "methodSignature": "property_supply_share_value_nondecreasing(uint8)",
+    "inputValues": [
+     "97"
+    ]
+   },
+   "AccessList": null,
+   "SkipNonceChecks": true,
+   "SkipFromEOACheck": true
+  },
+  "blockNumberDelay": 0,
+  "blockTimestampDelay": 0
+ }
+]

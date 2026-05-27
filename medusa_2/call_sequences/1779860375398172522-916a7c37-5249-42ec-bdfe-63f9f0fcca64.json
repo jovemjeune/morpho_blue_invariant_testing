@@ -1,0 +1,54 @@
+[
+ {
+  "call": {
+   "from": "0x0000000000000000000000000000000000010000",
+   "to": "0xa4ad4f68d0b91cfd19687c881e50f3a00242828c",
+   "nonce": 0,
+   "value": "0x0",
+   "gasLimit": 12500000,
+   "gasPrice": "0x1",
+   "gasFeeCap": "0x0",
+   "gasTipCap": "0x0",
+   "data": "0xd505accf000000000000000000000000f62849f9a0b5bf2913b396098f7c7019b51a820a00000000000000000000000020ec7b62a6c25bb4d5e09fff7c50ed10f95525f18ff8b46ac1f8065f7d267a773f0c90cf154ac5678e15f3c1b9341d94fb190f9a82e6f2ba59c8ba211037f9aec4aa6329abec95c1d7be4b5f80b06c49b554a67d000000000000000000000000000000000000000000000000000000000000001773746f726528616464726573732c627974657332322c627974657333322900006c61737420757064617465000000000000000000000000000000000000000000",
+   "dataAbiValues": {
+    "methodSignature": "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+    "inputValues": [
+     "0xF62849F9A0B5Bf2913b396098F7c7019b51A820a",
+     "0x20eC7B62A6c25Bb4D5E09fff7c50ED10F95525F1",
+     "65120160611996205686178627979667039962472431666505356740614916060723732352922",
+     "59208720387345030575177779856320656539099249120374748917830589276132360889981",
+     "23",
+     "73746f726528616464726573732c627974657332322c62797465733332290000",
+     "6c61737420757064617465000000000000000000000000000000000000000000"
+    ]
+   },
+   "AccessList": null,
+   "SkipNonceChecks": true,
+   "SkipFromEOACheck": true
+  },
+  "blockNumberDelay": 23759,
+  "blockTimestampDelay": 604770
+ },
+ {
+  "call": {
+   "from": "0x0000000000000000000000000000000000020000",
+   "to": "0x5991a2df15a8f6a256d3ec51e99254cd3fb576a9",
+   "nonce": 0,
+   "value": "0x0",
+   "gasLimit": 12500000,
+   "gasPrice": "0x1",
+   "gasFeeCap": "0x0",
+   "gasTipCap": "0x0",
+   "data": "0x06fdde03",
+   "dataAbiValues": {
+    "methodSignature": "name()",
+    "inputValues": []
+   },
+   "AccessList": null,
+   "SkipNonceChecks": true,
+   "SkipFromEOACheck": true
+  },
+  "blockNumberDelay": 2,
+  "blockTimestampDelay": 576440
+ }
+]
