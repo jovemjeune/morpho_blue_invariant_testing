@@ -2,6 +2,10 @@
 # `function f() { make forge ARGS="$*"; }`
 
 forge:
-	@FOUNDRY_PROFILE=no_via_ir forge $(ARGS)
+	@forge $(ARGS)
+
+# Production bytecode matching upstream Morpho Blue
+forge-via-ir:
+	@FOUNDRY_PROFILE=via_ir forge $(ARGS)
 
 .PHONY: forge
