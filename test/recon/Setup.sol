@@ -17,11 +17,13 @@ import {ERC20Mock} from  "src/mocks/ERC20Mock.sol";
 import "src/mocks/IrmMock.sol";
 import "src/Morpho.sol";
 import "src/mocks/OracleMock.sol";
+import {MarketManager} from "./MarketManager.sol";
 
 abstract contract Setup is BaseSetup, ActorManager, AssetManager, Utils {
     ERC20Mock eRC20Mock;
     IrmMock irmMock;
     Morpho morpho;
+    MarketManager marketManager;
     OracleMock oracleMock;
     MarketParams[] markets;
     address loan;
@@ -30,14 +32,15 @@ abstract contract Setup is BaseSetup, ActorManager, AssetManager, Utils {
     /// This contains all calls to be performed in the tester constructor, both for Echidna and Foundry
     function setup() internal virtual override {
         //Add essential contracts
-        irmMock = new IrmMock(); 
-        morpho = new Morpho(address(this)); 
+        irmMock = new IrmMock();
+        marketManager = new MarketManager(address(this));
+        morpho = marketManager.morpho();
         oracleMock = new OracleMock(); 
         //Enable Lltv 
-        morpho.enableIrm(address(irmMock));
-        morpho.enableLltv(0.385e18);
-        morpho.enableLltv(0.625e18);
-        morpho.enableLltv(0.86e18);
+        marketManager.enableIrm(address(irmMock));
+        marketManager.enableLltv(0.385e18);
+        marketManager.enableLltv(0.625e18);
+        marketManager.enableLltv(0.86e18);
         // Register actors owner will be this address
         _addActor(address(0xA11CE)); //user1
         _addActor(address(0xB0B));   //user2 
@@ -58,7 +61,7 @@ abstract contract Setup is BaseSetup, ActorManager, AssetManager, Utils {
                 irm: address(irmMock),
                 lltv:_lltv
                 });  
-                morpho.createMarket(params);            
+                marketManager.createMarket(params);
                 markets.push(params);   
                 address[] memory spenders = new address[](1);
                 spenders[0] = address(morpho);
